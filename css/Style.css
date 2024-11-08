@@ -98,41 +98,74 @@ footer img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 80px);
 }
 
 form {
     background: white;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 400px;
+    align-items: center;
+    margin-top: 10px;
 }
 
-input[type="text"], input[type="password"],
+/* Estilos de cada grupo de formulario y los textos encima de los input
+*/
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+/* Estilo para los inputs y textarea */
+input[type="text"],
+input[type="password"],
 textarea {
+    width: 80%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transición para animaciones suaves */
+    background-color: #fff;
+    outline: none; /* Remueve el borde de enfoque predeterminado */
 }
 
+/* Efecto de iluminación al pasar el ratón (hover) y al estar en foco (focus) */
+input[type="text"]:hover,
+textarea:hover,
+input[type="password"]:hover,
+input[type="text"]:focus,
+textarea:focus,
+input[type="password"]:focus {
+    border: 2px solid #6b6b6b; /* Cambia el borde al pasar el ratón o hacer foco */
+    box-shadow: 0 0 30px rgba(17, 17, 17, 0.733); /* Sombra alrededor para dar el efecto de iluminación */
+    background-color: rgba(117, 117, 117, 0.26); /* Fondo sutil azul al hacer foco o hover */
+}
+
+/* Efecto de iluminación al enviar el formulario */
 input[type="submit"] {
-    padding: 10px;
-    background-color: #3a3a3a;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #383838;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: color 0.3s;
-    
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #686868;
-    transition: color 0.3s;
+    background-color: #202020;
+    transform: scale(1.02); /* Efecto de aumentar el tamaño al pasar el ratón */
 }
 
 a {
@@ -191,7 +224,14 @@ main {
 .tarjeta:hover {
     opacity: 90%;
     background-color: #d6d6d6;
-    transition: color 0.3s;
+    transition: background-color 0.3s;
+    transition: border-color 0.3s;
+    transition: box-shadow 0.3s;
+    transition: transform 0.3s;
+    border: 2px solid #6b6b6b; /* Cambia el borde al pasar el ratón o hacer foco */
+    box-shadow: 0 0 30px rgba(17, 17, 17, 0.733); /* Sombra alrededor para dar el efecto de iluminación */
+    background-color: d6d6d6; /* Fondo sutil azul al hacer foco o hover */
+    transform: scale(1.02); /* Efecto de aumentar el tamaño al pasar el ratón */
 }
 
 .tarjeta p {
@@ -206,4 +246,19 @@ main {
     background-color: #ddd;
     border-radius: 50%;
     margin: 0 auto 10px;
+}
+
+/* Video container styles */
+.video-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video settings */
+.video-container video {
+    max-width: 500px;  /* Limita el tamaño del video */
+    width: 100%;  /* Hace que el video sea responsive */
+    height: auto;
 }
