@@ -198,10 +198,15 @@ main {
 
 
 .descripcion {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 2em;
-}
+        font-size: 1em;
+        color: #555;
+        text-align: center; /* Para centrar el texto */
+        margin-bottom: 30px;
+        max-width: 600px; /* Limita el ancho para una mejor legibilidad */
+        margin: 0 auto 30px auto; /* Centra el texto horizontalmente */
+    }
+    
+
 
 /* Estilos de las tarjetas de perfil */
 .tarjetas {
