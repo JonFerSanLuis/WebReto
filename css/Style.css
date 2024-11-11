@@ -89,7 +89,7 @@ footer img {
 .form-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 form {
@@ -103,7 +103,6 @@ form {
     flex-direction: column;
     width: 400px;
     align-items: center;
-    margin-top: 10px;
 }
 
 /* Estilos de cada grupo de formulario y los textos encima de los input
