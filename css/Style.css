@@ -13,24 +13,16 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
+/* Ajusta el tamaño solo del logo */
+.logo-container .logo {
+    width: 50px;
+    height: auto;
 }
 
-.logo a {
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-.logo a:hover {
-    color: rgb(168, 168, 168);
+/* Opcional: Puedes también ajustar el contenedor si es necesario */
+.logo-container {
+    display: inline-block; /* Mantiene el logo junto a otros elementos del header */
+    /* Añade cualquier otro estilo que necesites para posicionar el contenedor */
 }
 
 nav {
