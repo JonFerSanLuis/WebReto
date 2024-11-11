@@ -13,5 +13,7 @@ function validarInicioSesion() {
         console.log("Valido");
     } else {
         console.log("No valido");
+        let textoError = document.getElementById("pErrorInicioSesion");
+        textoError.innerHTML = "Error";
     }
 }
