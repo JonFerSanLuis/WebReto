@@ -5,9 +5,6 @@ let password = "123";
 // Funcion que valida el inicio de sesión
 function validarInicioSesion() {
 
-    // evita que el formulario se envie en caso de que sea erroneo
-   // event.preventDefault();
-
     // recoge los datos que ha introducido el usuario en el formulario
     let inputName = document.getElementById("usuario");
     let inputPassword = document.getElementById("password");
@@ -26,4 +23,8 @@ function validarInicioSesion() {
         inputPassword.value = "";
     }
 }
-//document.getElementById("formulario").addEventListener("submit", validarInicioSesion);
+
+// TODO: 
+function redirigirIniciarSesion(params) {
+    
+}
