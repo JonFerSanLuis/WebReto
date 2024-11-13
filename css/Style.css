@@ -61,30 +61,6 @@ nav a:hover {
     transition: 0.05s;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #00000081;
-    text-align: center;
-    z-index: 1000;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    opacity: 0.7;
-}
-
-footer img {
-    width: 40px;
-    height: 40px;
-    margin: 0 15px;
-}
 
 .titulo {
     text-align: center;
@@ -299,7 +275,7 @@ main {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: blur(2px) brightness(0.4); /* Desenfoque y brillo */
+    filter: brightness(0.5); /* Desenfoque y brillo */
     transform: scale(1.1); /* Aumentar tamaño del video para eliminar esquinas blancas */
 }
 
