@@ -39,6 +39,7 @@ nav {
     gap: 20px;
     justify-content: center;
     flex-grow: 1;
+    margin-right: 5%;
 }
 
 nav a {
