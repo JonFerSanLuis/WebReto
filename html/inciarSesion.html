@@ -22,7 +22,7 @@
         </nav>
     </header>
     <div class="form-container">
-        <form>
+        <form onsubmit="validarInicioSesion()">
             <h1 class="formH1">Iniciar Sesion</h1>
             <label for="usuario">Usuario:</label>
             <input type="text" id="usuario" name="usuario" required>
@@ -32,7 +32,7 @@
 
             <p id="pErrorInicioSesion" style="color: red;"></p>
             
-            <input type="submit" class="outfit-soft" value="Iniciar sesión" onclick="validarInicioSesion()">
+            <input type="submit" class="outfit-soft" value="Iniciar sesión">
         </form>
     </div>
     <footer>
