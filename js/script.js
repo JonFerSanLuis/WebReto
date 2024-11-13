@@ -24,7 +24,8 @@ function validarInicioSesion() {
     }
 }
 
-// TODO: 
-function redirigirIniciarSesion(params) {
-    
+/*
+function redirigirIniciarSesion() {
+    window.location.href = "../html/inciarSesion.html";
 }
+*/
