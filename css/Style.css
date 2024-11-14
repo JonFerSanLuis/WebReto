@@ -332,12 +332,6 @@ main {
     align-items: center;
 }
 
-/* Video settings */
-.video-container video {
-    max-width: 500px;  /* Limita el tamaño del video */
-    width: 100%;  /* Hace que el video sea responsive */
-    height: auto;
-}
 
 #videoFondo {
     position: fixed;
@@ -395,19 +389,60 @@ ul {
 
 .containerProyecto {
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-grow: 1; /* Ocupa todo lo posible */
 }
 
 .juegos {
     text-align: left;
     text-justify: auto;
-    width: 35%;
     margin-left: 50px;
     margin-bottom: 40px;
 }
 
 .descripcion-proyectos {
     text-align: center;
-    text-justify: auto;
-    width: 50%;
-    margin-bottom: 40px;
+    max-width: 60%;
+    margin: 30px auto 60px auto;
+}
+
+/* Contenedor que contiene el juego y el video, uno al lado del otro */
+.juegos, .video-container {
+    width: 45%; /* Ambos toman la mitad del espacio */
+}
+
+/* Contenedor para el juego y el video alineados horizontalmente */
+.containerProyecto .contenido-juego-video {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* limitar tamaño del video */
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenido-juego-video {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 20px; /* Espacio entre juegos y video */
+    max-width: 1200px; /* Limita el ancho para centrar el contenido */
+    width: 100%; /* Ancho completo dentro del max-width */
+}
+
+#parrafoJuego {
+    text-align: justify;
 }
