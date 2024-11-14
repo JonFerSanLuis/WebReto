@@ -2,20 +2,53 @@ body {
     margin: 0;
     background-color: #e4e4e4;
     position: relative;
-    background-size: cover; /* Esto hace que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen en la pantalla */
-    background-attachment: fixed; /* Hace que la imagen de fondo no se mueva al hacer scroll */
     color: white;
+    
+}
+
+#footerIndex {
+    position: relative;
+    background-color: #00000081;
+    margin-top: auto;
+
+}
+
+footer {
+    width: 100%;
+    background-color: #000000e7;
+    text-align: center;
+    z-index: 1000;
+    color: rgb(97, 97, 97);
+    position: relative;  /* Esto hará que el footer se coloque correctamente */
+    padding-top: 15px;
+
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    opacity: 0.7;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
 }
 
 header {
-    background-color: #00000081;
+    background-color: #000000e7;
     padding: 20px 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+#headerIndex {
+    background-color: #00000081;
+}
+
 /* Ajusta el tamaño solo del logo */
 .logo-container .logo {
     width: 50px;
@@ -25,6 +58,7 @@ header {
 #containerIndex {
     text-align: center;
 }
+
 .logo-container {
     display: inline-block; /* Mantiene el logo junto a otros elementos del header */
 }
@@ -40,6 +74,10 @@ nav {
     justify-content: center;
     flex-grow: 1;
     margin-right: 5%;
+}
+
+.contact-info {
+    text-decoration: none;
 }
 
 nav a {
@@ -99,7 +137,7 @@ form {
     width: 400px;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 40px; /* Si prefieres el margen aquí */
+    margin-bottom: auto;
 }
 
 
@@ -184,10 +222,27 @@ a {
     top: 0;
     left: 0;
 }
+.containerContacto {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: flex-start; /* Alineación en la parte superior */
+    padding: 2em; /* Espaciado interno */
+}
+
+iframe {
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: auto;
+    margin-top: 6px;
+    margin-bottom: 40px;
+    height: 494px;
+}
 
 main {
     text-align: center;
     margin: 2em 0;
+    flex-grow: 1; /* Esto hace que el contenido principal ocupe el espacio restante */
+    text-align: center;
 }
 
 
@@ -223,9 +278,6 @@ main {
 .tarjeta:hover {
     opacity: 90%;
     background-color: #d6d6d6;
-    transition: background-color 0.3s;
-    transition: border-color 0.3s;
-    transition: box-shadow 0.3s;
     transition: transform 0.3s;
     border: 2px solid #6b6b6b; /* Cambia el borde al pasar el ratón o hacer foco */
     box-shadow: 0 0 30px rgba(17, 17, 17, 0.733); /* Sombra alrededor para dar el efecto de iluminación */
@@ -255,6 +307,7 @@ main {
 /* Video container styles */
 .video-container {
     margin-top: 20px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,4 +363,31 @@ main {
     transform: scale(1.05); /* Efecto de presión */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más tenue */
     color: #1e6ab3; /* Mantén el texto azul oscuro cuando se presiona */
+}
+
+ul {
+    list-style: none;
+}
+
+.spanFooter {
+    margin: 20px;
+}
+
+.containerProyecto {
+    color: black;
+}
+
+.juegos {
+    text-align: left;
+    text-justify: auto;
+    width: 35%;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.descripcion-proyectos {
+    text-align: center;
+    text-justify: auto;
+    width: 50%;
+    margin-bottom: 40px;
 }
