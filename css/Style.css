@@ -1,4 +1,4 @@
-/* Configuración básica */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +17,12 @@ body {
 
 /* Sección principal (main) que ocupará el espacio restante */
 main {
-    flex: 1; /* Hace que el contenido principal crezca para llenar el espacio disponible */
+    flex: 1; 
     text-align: center;
     margin: 2em 0;
 }
 
-/* Footer al fondo de la pantalla */
+/* Footer fondo de la pantalla */
 #footerIndex {
     background-color: #00000081;
     color: white;
@@ -109,12 +109,12 @@ nav a {
 
 nav a:hover {
     color: rgb(168, 168, 168);
-    transform: scale(1.02); /* Efecto de aumentar el tamaño al pasar el ratón */
+    transform: scale(1.02); /* Para aumentar el tamaño al pasar el ratón */
     transition: 0.1s;
 }
 
 .icono:hover {
-    transform: scale(1.08); /* Efecto de aumentar el tamaño al pasar el ratón */
+    transform: scale(1.08); 
     transition: 0.05s;
 }
 
@@ -141,8 +141,8 @@ nav a:hover {
     align-items: flex-start;
     gap: 20px;
     text-align: center;
-    margin-top: 40px; /* Espacio con el encabezado */
-    margin-bottom: 40px; /* Espacio con el footer */
+    margin-top: 40px; 
+    margin-bottom: 40px; 
     width: 50%;
 }
 
@@ -173,7 +173,7 @@ form label {
     color: #333;
 }
 
-/* Estilo para los inputs y textarea */
+/* Estilo para los inputs y text area */
 input[type="text"],
 input[type="password"],
 textarea {
@@ -183,9 +183,9 @@ textarea {
     margin-bottom: 20px;
     border: 2px solid #ccc;
     border-radius: 5px;
-    transition: all 0.3s ease; /* Transición para animaciones suaves */
+    transition: all 0.3s ease; 
     background-color: #fff;
-    outline: none; /* Remueve el borde de enfoque predeterminado */
+    outline: none; 
 }
 
 /* Efecto de iluminación al pasar el ratón (hover) y al estar en foco (focus) */
@@ -229,22 +229,22 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Colocarlo detrás del contenido */
+    z-index: -1;
     overflow: hidden;
 }
 
 .video-background video {
-    object-fit: cover; /* Asegura que el video cubra toda el área sin distorsionarse */
-    width: 100%; /* Asegura que el video ocupe todo el ancho de la pantalla */
-    height: 100%; /* Asegura que el video ocupe toda la altura de la pantalla */
-    position: absolute; /* Asegura que el video esté posicionado correctamente */
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
     top: 0;
     left: 0;
 }
 .containerContacto {
     display: flex;
     justify-content: space-between; /* Espaciado entre los elementos */
-    align-items: flex-start; /* Alineación en la parte superior */
+    align-items: flex-start; 
     padding: 2em; /* Espaciado interno */
 }
 
@@ -268,10 +268,10 @@ main {
 .descripcion {
         font-size: 1em;
         color: #555;
-        text-align: center; /* Para centrar el texto */
+        text-align: center; 
         margin-bottom: 30px;
-        max-width: 600px; /* Limita el ancho para una mejor legibilidad */
-        margin: 0 auto 30px auto; /* Centra el texto horizontalmente */
+        max-width: 600px; 
+        margin: 0 auto 30px auto;
     }
     
 
@@ -291,17 +291,17 @@ main {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: color 0.3s; /* Efecto al cambiar color */
+    transition: color 0.3s; 
 }
 
 .tarjeta:hover {
     opacity: 90%;
     background-color: #d6d6d6;
     transition: transform 0.3s;
-    border: 2px solid #6b6b6b; /* Cambia el borde al pasar el ratón o hacer foco */
-    box-shadow: 0 0 30px rgba(17, 17, 17, 0.733); /* Sombra alrededor para dar el efecto de iluminación */
-    background-color: d6d6d6; /* Fondo sutil azul al hacer foco o hover */
-    transform: scale(1.02); /* Efecto de aumentar el tamaño al pasar el ratón */
+    border: 2px solid #6b6b6b; 
+    box-shadow: 0 0 30px rgba(17, 17, 17, 0.733); 
+    background-color: d6d6d6; 
+    transform: scale(1.02);
 }
 
 .tarjeta p {
@@ -342,41 +342,41 @@ main {
     object-fit: cover;
     z-index: -1;
     filter: brightness(0.5); /* Desenfoque y brillo */
-    transform: scale(1.1); /* Aumentar tamaño del video para eliminar esquinas blancas */
+    transform: scale(1.1); 
 }
 
 #seccion-formulario {
     display: flex;
-    flex: 1; /* ocupar espacio restante */
+    flex: 1; 
 }
 
 #btnIniciarSesion {
-    background: transparent; /* Fondo transparente */
-    color: #8fb2d3; /* Color del texto azul oscuro */
+    background: transparent; 
+    color: #8fb2d3; 
     font-family: 'Outfit', sans-serif;
-    font-size: 18px; /* Tamaño de fuente */
+    font-size: 18px; 
     padding: 12px 36px;
     margin-top: 1em;
-    border: 2px solid #3a7cbb; /* Borde azul oscuro */
-    border-radius: 8px; /* Bordes redondeados */
+    border: 2px solid #3a7cbb; 
+    border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; 
     position: relative;
     overflow: hidden;
 }
 
 #btnIniciarSesion:hover {
-    transform: scale(1.1); /* Efecto de agrandado */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* Sombra más intensa */
-    color: #ffffff; /* Cambia el color del texto a blanco */
+    transform: scale(1.1); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); 
+    color: #ffffff; 
     border-color: #b1c9df;
     transition: 0.3s;
 }
 
 #btnIniciarSesion:active {
-    transform: scale(1.05); /* Efecto de presión */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más tenue */
-    color: #1e6ab3; /* Mantén el texto azul oscuro cuando se presiona */
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    color: #1e6ab3; 
 }
 
 ul {
@@ -393,7 +393,7 @@ ul {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    flex-grow: 1; /* Ocupa todo lo posible */
+    flex-grow: 1; 
 }
 
 .juegos {
@@ -411,7 +411,7 @@ ul {
 
 /* Contenedor que contiene el juego y el video, uno al lado del otro */
 .juegos, .video-container {
-    width: 45%; /* Ambos toman la mitad del espacio */
+    width: 45%; 
 }
 
 /* Contenedor para el juego y el video alineados horizontalmente */
@@ -437,10 +437,10 @@ ul {
 
 .contenido-juego-video {
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    gap: 20px; /* Espacio entre juegos y video */
-    max-width: 1200px; /* Limita el ancho para centrar el contenido */
-    width: 100%; /* Ancho completo dentro del max-width */
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 1200px; 
+    width: 100%; 
 }
 
 #parrafoJuego {
